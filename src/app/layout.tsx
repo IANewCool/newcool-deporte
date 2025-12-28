@@ -13,8 +13,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Deporte - NewCooltura Informada",
+  title: "Deporte Chile - IND | NewCooltura Informada",
   description: "Recintos deportivos, programas IND, federaciones y calculadora de frecuencia cardiaca en Chile",
+  keywords: ["deporte Chile", "IND", "recintos deportivos", "federaciones", "vida activa"],
+  openGraph: {
+    title: "Deporte Chile - NewCooltura Informada",
+    description: "Programas IND y recintos deportivos",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -23,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
